@@ -1,0 +1,30 @@
+import React from 'react';
+
+const Skills = () => {
+    return (
+        <div className='my-36 mx-[4%]'>
+            <h1 className='font-serif text-5xl font-bold text-[#313a8a] text-center mb-5'>Skills</h1>
+            <div className='flex flex-col lg:flex-row justify-center items-center bg-[#E5EAEE] shadow-lg shadow-white '>
+                <div className='mt-2 py-5 px-5 w-11/12 lg:w-7/12 my-auto'>
+                    <h1 className='text-lg font-sans font-semibold mt-4'><span className='text-xl font-semibold text-[rgb(30,164,226)] '>Expertise: </span> Html, CSS, Bootstrap, Tailwind CSS, JavaScript, React.js, MongoDB, Firebase</h1>
+                    <h1 className='text-lg font-sans font-semibold mt-4'><span className='text-xl font-semibold text-[rgb(30,164,226)] '>Comfortable: </span> Node.js, Rails, RSpec, PostgreSQL, Oracle, Java, Rest API</h1>
+                    <h1 className='text-lg font-sans font-semibold mt-4'><span className='text-xl font-semibold text-[rgb(30,164,226)] '>Familiar: </span> Material-UI, Typescript, GraphQL, Redux, Jest</h1>
+                    <h1 className='text-lg font-sans font-semibold mt-4'><span className='text-xl font-semibold text-[rgb(30,164,226)] '>Tools: </span> Git, Netlify, Vercel, Chrome Dev Tools</h1>
+                </div>
+
+                <div className='w-11/12 lg:w-5/12 bg-white m-2 rounded mx-8'>
+                    <span className='flex flex-row items-center justify-center p-3'> <span>JavaScript:</span> <progress className="ml-4 progress progress-success w-full inline-block h-4  bg-base-100" value="90" max="100"></progress></span>
+
+                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-4'>React.js:</span> <progress className="ml-4 progress progress-success w-full inline-block h-4 bg-base-100" value="90" max="100"></progress></span>
+
+                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-1'>MongoDB:</span> <progress className="ml-4 progress progress-info w-full inline-block h-4 bg-base-100" value="75" max="100"></progress></span>
+
+                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-5'>Node.js:</span> <progress className="ml-4 progress progress-warning w-full inline-block h-4 bg-base-100" value="70" max="100"></progress></span>
+
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Skills;

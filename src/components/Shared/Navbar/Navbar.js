@@ -25,7 +25,7 @@ const Navbar = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <div className='hidden lg:block'>
+                    <div className='hidden lg:block lg:ml-8'>
                         <div className="avatar">
                             <div className="w-16 ml-12 rounded-full ring ring-primary ring-offset-base-100 border-4 border-slate-300 ">
                                 <img src={circleImage} alt="small profile" />
