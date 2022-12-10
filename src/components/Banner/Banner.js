@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import profile from '../../assets/images/removedBg.png'
 
 const Banner = () => {
@@ -9,16 +10,21 @@ const Banner = () => {
                     <div className='lg:ml-44 rounded-full bg[#E5EBEE] shadow-xl shadow-white'>
                         <img src={profile} alt="" className="rounded-full w-80  shadow-lg shadow-white" />
                     </div>
-                    {/* <div className="avatar">
-                        <div className="w-24 rounded-full">
-                            <img src="https://placeimg.com/192/192/people" />
-                        </div>
-                    </div> */}
-                    <div className='mt-8 lg:ml-1 w-7/12'>
-                        <h1 className="text-4xl font-bold ">Want Used Dresses?</h1>
-                        <h1 className="text-3xl font-semibold text-gray-500 my-4">Best Condition Must?</h1>
-                        <p className="text-md text-gray-500 mb-8 font-sans pl-4 border-gray-600 border-l-4">Over 1 million people around the country are giving and getting cheap/free second hand dresses in their local communities. Just explore and order from our verified sellers and buyers.</p>
-                        <button className="btn btn-primary bg-[#fd6288] border-0">Explore Dresses</button>
+
+                    <div className='mt-8 lg:ml-1 md:w-7/12 w-full'>
+                        <h1 className="text-4xl font-bold ">Md. Atiqur Rahman Talukder</h1>
+                        <h1 className="text-sm md:text-lg font-semibold text-[#28317c] my-4 font-mono">
+                            <TypeAnimation
+                                sequence={['Software Engineer.', 1500, 'MERN Stack Developer.', 1500]}
+                                //  Continuing previous Text
+                                style={{ fontSize: '2em' }}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={Infinity}
+                            />
+                        </h1>
+                        <p className="mt-8 text-md text-gray-600 mb-8 font-sans pl-4 border-gray-600 border-l-4">Experienced Assistant Software Engineer with a history of working in the multinational IT companies, government IT sector. Skilled in MERN Stack Development, CSS, Tailwind, Bootstrap, Oracle Database, Rails, RSpec, PostgreSQL, TDD. Love to write clean, readable code following DRY, KISS and other methods.</p>
+                        <button className="btn btn-primary bg-[#EB3E0D] border-0 shadow-lg shadow-white hover:bg-green-800"> <span className='text-white font-bold'>Download Resume</span> </button>
                     </div>
                 </div>
             </div >
