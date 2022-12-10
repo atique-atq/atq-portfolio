@@ -3,7 +3,6 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
     const { _id, name, title, technologies, liveUrl } = project;
-    console.log('---', name)
 
     return (
         <div >

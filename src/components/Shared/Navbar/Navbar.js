@@ -14,7 +14,7 @@ const Navbar = () => {
         <li onClick={() => scroll('skills')} ><Link> Skills</Link ></li>
         <li > <Link>Experiences</Link> </li>
         <li ><Link >About me</Link></li>
-        <li className='mx-0 lg:mr-12 font-semibold rounded-lg text-[#EB3E0D] shadow-lg shadow-white'><Link >Contact</Link></li>
+        <li onClick={() => scroll('contact')} className='mx-0 lg:mr-12 font-semibold rounded-lg text-[#EB3E0D] shadow-lg shadow-white'><Link >Contact</Link></li>
     </React.Fragment >
 
     return (
