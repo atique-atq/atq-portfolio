@@ -11,11 +11,12 @@ const Navbar = () => {
         <li ><Link to="/experiences">Experiences</Link></li>
         <li ><Link to="/education">Education</Link></li>
         <li ><Link to="/about">About me</Link></li>
+        <li className='mx-0 lg:mr-12 shadow-xl font-semibold rounded-lg text-[#EB3E0D] shadow-white'><Link to="/resume">Resume</Link></li>
     </React.Fragment>
 
     return (
         <div>
-            <div className="navbar bg-base-100 text-xl font-semibold text-gray-500 ">
+            <div className="navbar bg-base-100 text-lg font-semibold text-gray-500 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
