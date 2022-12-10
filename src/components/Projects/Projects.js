@@ -1,5 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import shareWear from '../../assets/images/shareWear.JPG';
+import docService from '../../assets/images/docService.JPG';
+import techLearning from '../../assets/images/techService.JPG'
 
 const Projects = () => {
     const projects = [
@@ -9,6 +12,7 @@ const Projects = () => {
             title: 'E-commerce website for buying and selling second-hand dresses',
             technologies: 'Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel',
             liveUrl: 'https://sharewearbd.web.app',
+            image: shareWear
         },
         {
             _id: '2',
@@ -16,6 +20,7 @@ const Projects = () => {
             title: 'Service and Review based website for a doctor',
             technologies: 'Firebase, Tailwind CSS, React.js, Node.js, MongoDB',
             liveUrl: 'https://doctor-service-atq.web.app',
+            image: docService,
         },
         {
             _id: '3',
@@ -23,6 +28,7 @@ const Projects = () => {
             title: ' Edutech site for technology learning and practicing',
             technologies: 'Bootstrap, Firebase, React.js, Node.js, MongoDB',
             liveUrl: 'https://tech-learning-bd-880c4.web.app',
+            image: techLearning,
         }
     ]
 
