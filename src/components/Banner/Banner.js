@@ -20,7 +20,7 @@ const Banner = () => {
 
     return (
         <div >
-            <div className="hero px-12 mx-0 py-[2%]">
+            <div className="hero px-12 mx-0 py-[5%] mt-5" id='banner'>
                 <div className="hero-content flex-col lg:flex-row-reverse lg:pr-4 justify-between">
                     <div className='lg:ml-2 rounded-full bg[#E5EAEE] shadow-xl shadow-white'>
                         <img src={profile} alt="" className="rounded-full w-96  shadow-lg shadow-white" />
