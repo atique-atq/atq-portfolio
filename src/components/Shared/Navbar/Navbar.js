@@ -5,13 +5,12 @@ import circleImage from '../../../assets/images/circlePic.png'
 const Navbar = () => {
     const menuItems = <React.Fragment>
         <li className='first-letter:text-4xl first-letter:font-bold'><Link to="/">Home</Link></li>
-        <li ><Link to="/summary">Summary</Link></li>
         <li ><Link to="/Skills">Skills</Link></li>
         <li ><Link to="/projects">Projects</Link></li>
         <li ><Link to="/experiences">Experiences</Link></li>
         <li ><Link to="/education">Education</Link></li>
         <li ><Link to="/about">About me</Link></li>
-        <li className='mx-0 lg:mr-12 shadow-xl font-semibold rounded-lg text-[#EB3E0D] shadow-white'><Link to="/resume">Resume</Link></li>
+        <li className='mx-0 lg:mr-12 font-semibold rounded-lg text-[#EB3E0D] shadow-lg shadow-white'><Link to="/resume">Resume</Link></li>
     </React.Fragment>
 
     return (
@@ -28,7 +27,7 @@ const Navbar = () => {
                     </div>
                     <div className="avatar">
                         <div className="w-20 ml-12 rounded-full ring ring-primary ring-offset-base-100 border-4 border-slate-300">
-                            <img src={circleImage} />
+                            <img src={circleImage} alt="small profile" />
                         </div>
                     </div>
                 </div>
