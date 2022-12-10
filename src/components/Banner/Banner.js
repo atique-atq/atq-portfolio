@@ -20,13 +20,13 @@ const Banner = () => {
 
     return (
         <div >
-            <div className="hero px-[5%] py-[2%]">
-                <div className="hero-content flex-col lg:flex-row-reverse lg:pr-4">
-                    <div className='lg:ml-44 rounded-full bg[#E5EAEE] shadow-xl shadow-white'>
+            <div className="hero px-12 mx-0 py-[2%]">
+                <div className="hero-content flex-col lg:flex-row-reverse lg:pr-4 justify-between">
+                    <div className='lg:ml-2 rounded-full bg[#E5EAEE] shadow-xl shadow-white'>
                         <img src={profile} alt="" className="rounded-full w-96  shadow-lg shadow-white" />
                     </div>
 
-                    <div className='mt-8 lg:ml-1 md:w-7/12 w-full'>
+                    <div className='mt-8 lg:ml-12 md:w-7/12 w-full'>
                         <h1 className="text-4xl font-bold ">Md. Atiqur Rahman Talukder</h1>
                         <h1 className="text-sm md:text-lg font-semibold text-[#28317c] my-4 font-mono">
                             <TypeAnimation
