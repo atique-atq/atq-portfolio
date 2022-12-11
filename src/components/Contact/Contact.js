@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='my-24 px-[8%] mt-12' id="contact">
+        <div className='my-24 px-[8%] mt-20 pt-20' id="contact">
             <h1 className='font-serif text-5xl font-bold mb-5'>Contact me</h1>
 
             <div className="card flex-shrink-0 w-full mx-auto max-w-lg shadow-2xl bg-base-100 py-6">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import profile from '../../assets/images/removedBg.png'
+import profile from '../../assets/images/removedBg.png';
 
 const Banner = () => {
     const downloadResume = () => {
@@ -17,20 +17,23 @@ const Banner = () => {
             })
         })
     }
+    // text-[#28317c]
 
     return (
         <div >
             <div className="hero px-12 mx-0 py-[5%] mt-5" id='banner'>
                 <div className="hero-content flex-col lg:flex-row-reverse lg:pr-4 justify-between">
                     <div className='lg:ml-2 rounded-full bg[#E5EAEE] shadow-xl shadow-white'>
-                        <img src={profile} alt="" className="rounded-full w-96  shadow-lg shadow-white" />
+                        <img src={profile} alt="" className="rounded-full w-96  shadow-lg shadow-white
+                        transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900'"
+                        />
                     </div>
 
-                    <div className='mt-8 lg:ml-12 md:w-7/12 w-full'>
+                    <div className='mt-8 lg:ml-12 md:w-7/12 w-full' data-aos="fade-left" data-aos-duration="3000">
                         <h1 className="text-4xl font-bold ">Md. Atiqur Rahman Talukder</h1>
-                        <h1 className="text-sm md:text-lg font-semibold text-[#28317c] my-4 font-mono">
+                        <h1 className="text-sm md:text-lg font-semibold text-info my-4 font-mono">
                             <TypeAnimation
-                                sequence={['Software Engineer.', 1500, 'MERN Stack Developer.', 1500]}
+                                sequence={['Software Engineer.', 1800, 'MERN Stack Developer.', 1500]}
                                 //  Continuing previous Text
                                 style={{ fontSize: '2em' }}
                                 wrapper="span"
@@ -38,7 +41,9 @@ const Banner = () => {
                                 repeat={Infinity}
                             />
                         </h1>
-                        <p className="mt-8 text-lg text-gray-600 mb-8 font-sans pl-4 border-gray-600 border-l-4">Experienced Assistant Software Engineer with a history of working in the multinational IT companies, government IT sector. Skilled in MERN Stack Development, CSS, Tailwind, Bootstrap, Oracle Database, Rails, RSpec, PostgreSQL, TDD. Love to write clean, readable code following DRY, KISS and other methods.</p>
+                        <p className="mt-8 text-lg text-gray-600 mb-8 font-sans pl-4 border-white border-l-8
+                        ">
+                            Experienced Assistant Software Engineer with a history of working in the multinational IT companies, government IT sector. Skilled in MERN Stack Development, CSS, Tailwind, Bootstrap, Oracle Database, Rails, RSpec, PostgreSQL, TDD. Love to write clean, readable code following DRY, KISS and other methods.</p>
                         <button className="btn btn-primary bg-[#EB3E0D] border-0 shadow-lg shadow-white hover:bg-green-800"> <span className='text-white font-bold'
                             onClick={downloadResume}
                         >Download Resume</span> </button>
