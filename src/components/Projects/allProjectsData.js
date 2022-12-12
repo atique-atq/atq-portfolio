@@ -13,8 +13,8 @@ export const allProjectsData = async (id) => {
         {
             _id: 'phsw-20221',
             name: 'Share Wear Bd',
-            title: 'Website for buying and selling second-hand dresses',
-            description: 'Implemented admin, seller and buyer authorization. Admin can verify seller, delete any post, any buyer or seller. Also implemented uploading a product, book and complete the purchase.',
+            title: 'E-commerce website for buying and selling second-hand dresses',
+            description: ['On the homepage, customer(buyer) will see navbar will necessary menu, a landing banner with necessary images and information. Below that banner, category of the available dresses will be found. Upon click on the show details product of that category will be shown.', 'Going on the products page by clicking a category, card of the available products will be shown. If any seller is verified by the admin there will be tick means verified seller by the admin.', 'If user find any unwanted product, he/she can report that specific product which will be deleted by the admin later.', 'If any seller wants to show his products in the advertisement section, seller can have that access', 'Besides authentication of seller, buyer and admin, authorization of each roll has been implemented. Where seller can add product,delete product, admin can delete seller, delete buyer and reported items', 'From booked items, buyer can complete his online payment.'],
             technologies: 'Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel',
             liveUrl: 'https://sharewearbd.web.app',
             image: [sw1, sw2, sw3, sw4, sw5, sw6, sw7, sw8, sw9]
