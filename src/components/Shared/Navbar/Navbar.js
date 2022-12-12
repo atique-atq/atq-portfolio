@@ -5,8 +5,8 @@ import './Navbar.css';
 
 const Navbar = () => {
     const scroll = (id_name) => {
-        const section = document.querySelector(`#${id_name}`);
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // const section = document.querySelector(`#${id_name}`);
+        // section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     const menuItems = <React.Fragment>
@@ -46,8 +46,8 @@ const Navbar = () => {
                         </div>
                     </div> */}
                     <div className='ml-8 lg:pl-8'>
-                        <h1 className='text-xl tracking-[3px] font-sans text-red-800 text-shadow-sm
-                        transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-lg hover:shadow-white hover:p-2
+                        <h1 className='text-xl tracking-[3px] font-sans text-orange-600 text-shadow-lg
+                        transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-slate-100 duration-900 hover:rounded-md hover:shadow-lg hover:shadow-white hover:p-2 hover:cursor-pointer
                         '
                             onClick={() => scroll('banner')}>Portfolio Website</h1>
                     </div>
