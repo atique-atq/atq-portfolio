@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { allProjectsData } from './components/Projects/allProjectsData'
 import ProjectDetails from './components/Projects/ProjectDetails';
 import 'react-photo-view/dist/react-photo-view.css';
+import DisplayError from './components/Shared/DisplayError/DisplayError';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <DisplayError></DisplayError>,
       children: [
         {
           path: '/',
