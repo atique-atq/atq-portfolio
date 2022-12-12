@@ -15,6 +15,14 @@ import ds5 from '../../assets/images/docService/5.JPG';
 import ds6 from '../../assets/images/docService/6.JPG';
 import ds7 from '../../assets/images/docService/7.JPG';
 import ds8 from '../../assets/images/docService/8.JPG';
+import lt1 from '../../assets/images/learningTech/lt1.JPG';
+import lt2 from '../../assets/images/learningTech/lt2.JPG';
+import lt3 from '../../assets/images/learningTech/lt3.JPG';
+import lt4 from '../../assets/images/learningTech/lt4.JPG';
+import lt5 from '../../assets/images/learningTech/lt5.JPG';
+import lt6 from '../../assets/images/learningTech/lt6.JPG';
+import lt7 from '../../assets/images/learningTech/lt7.JPG';
+import lt8 from '../../assets/images/learningTech/lt8.JPG';
 
 export const allProjectsData = async (id) => {
     const projects = [
@@ -23,7 +31,7 @@ export const allProjectsData = async (id) => {
             name: 'Share Wear Bd',
             title: 'E-commerce website for buying and selling second-hand dresses',
             description: ['On the homepage, customer(buyer) will see navbar will necessary menu, a landing banner with necessary images and information. Below that banner, category of the available dresses will be found. Upon click on the show details product of that category will be shown.', 'Going on the products page by clicking a category, card of the available products will be shown. If any seller is verified by the admin there will be tick means verified seller by the admin.', 'If user find any unwanted product, he/she can report that specific product which will be deleted by the admin later.', 'If any seller wants to show his products in the advertisement section, seller can have that access', 'Besides authentication of seller, buyer and admin, authorization of each roll has been implemented. Where seller can add product,delete product, admin can delete seller, delete buyer and reported items', 'From booked items, buyer can complete his online payment.', 'Site has been made responsive'],
-            technologies: 'Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel, Firebase',
+            technologies: 'Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel, Firebase, Stripe gateway',
             liveUrl: 'https://sharewearbd.web.app',
             githubClient: 'https://github.com/atique-atq/share-wear-client',
             githubServer: 'https://github.com/atique-atq/share-wear-server',
@@ -44,10 +52,12 @@ export const allProjectsData = async (id) => {
             _id: 'phtl-20223',
             name: 'Tech Learning Bd',
             title: 'Edutech site for technology learning and practicing',
-            description: ['After log in user can see detailed and practice the course. Besides username and password, user can also log in using Google, GitHub'],
-            technologies: 'Bootstrap, Firebase, React.js, Node.js, MongoDB',
+            description: ['For registering and Practicing, one must log in the our side. Login can be done by google, github or after registering.', 'Besides username and password, user can also log in using Google, GitHub.', 'When viewing the details, user can download the course details as pdf.', 'Implemented react router dom, context api, private router.', 'Site has been made responsive.'],
+            technologies: 'Bootstrap, Firebase, React.js, Node.js, Node.js, MongoDB',
             liveUrl: 'https://tech-learning-bd-880c4.web.app',
-            image: [],
+            githubClient: 'https://github.com/atique-atq/tech-learner-bd',
+            githubServer: 'https://github.com/atique-atq/tech-learner-bd-server',
+            image: [lt1, lt2, lt3, lt4, lt5, lt6, lt7, lt8],
         }
     ];
     const matchedProject = projects.find(project => project._id === id);
