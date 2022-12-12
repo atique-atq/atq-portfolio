@@ -10,6 +10,7 @@ import { allProjectsData } from './components/Projects/allProjectsData'
 import ProjectDetails from './components/Projects/ProjectDetails';
 import 'react-photo-view/dist/react-photo-view.css';
 import DisplayError from './components/Shared/DisplayError/DisplayError';
+import Blog from './components/Blog/Blog';
 
 
 function App() {
@@ -33,7 +34,11 @@ function App() {
           path: '/project/:id',
           loader: ({ params }) => allProjectsData(params.id),
           element: <ProjectDetails></ProjectDetails>
-        }
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
       ]
     },
   ]);

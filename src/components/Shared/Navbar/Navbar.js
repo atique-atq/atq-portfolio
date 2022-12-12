@@ -11,14 +11,26 @@ const Navbar = () => {
 
     const menuItems = <React.Fragment>
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-            onClick={() => scroll('banner')} ><Link to="/">Home</Link></li>
+            onClick={() => scroll('banner')} >
+            <Link to="/">Home</Link></li>
+
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-            onClick={() => scroll('projects')} > <Link>Projects</Link> </li>
+            onClick={() => scroll('projects')} >
+            <Link>Projects</Link>
+        </li>
+
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-            onClick={() => scroll('skills')} ><Link> Skills</Link ></li>
+            onClick={() => scroll('skills')} >
+            <Link> Skills</Link >
+        </li>
+
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-        > <Link>Experiences</Link> </li>
-        <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'><Link >About me</Link></li>
+            onClick={() => scroll('about-me')} >
+            <Link>About me</Link>
+        </li>
+        <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'>
+            <Link to='/blog'>Blog</Link>
+        </li>
         <li
             onClick={() => scroll('contact')} className='mx-0 lg:mr-12 font-semibold rounded-lg text-[#EB3E0D] shadow-lg shadow-white  shake
             transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'><Link >Contact</Link></li>
