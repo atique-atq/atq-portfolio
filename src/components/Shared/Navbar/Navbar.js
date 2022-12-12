@@ -5,8 +5,8 @@ import './Navbar.css';
 
 const Navbar = () => {
     const scroll = (id_name) => {
-        // const section = document.querySelector(`#${id_name}`);
-        // section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const section = document.querySelector(`#${id_name}`);
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     const menuItems = <React.Fragment>

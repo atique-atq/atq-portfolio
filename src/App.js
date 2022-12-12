@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import { allProjectsData } from './components/Projects/allProjectsData'
 import ProjectDetails from './components/Projects/ProjectDetails';
+import 'react-photo-view/dist/react-photo-view.css';
 
 
 function App() {
