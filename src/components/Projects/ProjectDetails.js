@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Carousel from 'react-grid-carousel';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { useLocation } from 'react-router-dom'
+
 
 const ProjectDetails = () => {
     const projectDetails = useLoaderData();
-    const { name, title, description, technologies, liveUrl, image } = projectDetails;
+    const { name, title, description, technologies, liveUrl, image, githubClient, githubServer } = projectDetails;
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname]);
 
     return (
-        <div className='mt-6 my-6 pt-20 px-[12%]' >
+        <div className='mt-2 my-6 pt-20 px-[12%]' >
             <br />
             <div className='bg-white py-8 rounded shadow-xl shadow-gray-500'>
                 <Carousel cols={3} rows={1} gap={6} loop autoplay={6000}>
@@ -25,14 +33,14 @@ const ProjectDetails = () => {
                         </Carousel.Item>)
                     }
                 </Carousel>
-                <div className='mt-4 px-4'>
+                <div className='mt-2 px-4'>
                     <h1 className='font-sans text-info font-semibold text-xl py-3 text-center text-shadow-sm'>{name}:<span className='pl-4 text-lg font-semibold text-gray-600 pt-5 mt-0 pt-0'>{title}</span> </h1>
                     <div class="grid md:grid-cols-3  grid-cols-1 gap-4">
                         <div className='ml-4 col-span-2 border-gray-200 border-r-4 pr-4'>
                             <h1 className='font-semibold font-sans'>Description:</h1>
                             <ul className="list-disc ml-6 text-sm">
                                 {
-                                    description.map((singleDescription, index) => <li className='pb-4' key={index}>
+                                    description?.map((singleDescription, index) => <li className='pb-4' key={index}>
                                         {singleDescription}
                                     </li>)
                                 }
@@ -40,13 +48,13 @@ const ProjectDetails = () => {
                         </div>
 
                         <div className='mx-auto'>
-                            <button className="btn btn-outline btn-secondary bg-[#89dafd] border-none mb-3"><a href='https://sharewearbd.web.app/' target="_blank" rel="noopener noreferrer">Live URL</a> </button>
+                            <a href={liveUrl} target="_blank" rel="noopener noreferrer"><button className="btn btn-sm bg-[#89dafd] border-none text-black hover:bg-green-500 mb-3">Live URL </button></a>
                             <br />
-                            <button className="btn btn-outline btn-secondary bg-[#89dafd] border-none  mb-3"><a href='https://sharewearbd.web.app/' target="_blank" rel="noopener noreferrer">Git Repo-Client</a> </button>
+                            <a href={githubClient} target="_blank" rel="noopener noreferrer"><button className="btn btn-sm bg-[#89dafd] border-none text-black hover:bg-green-500 mb-3">Git Repo-Client </button></a>
                             <br />
-                            <button className="btn btn-outline btn-secondary bg-[#89dafd] border-none  mb-3"><a href='https://sharewearbd.web.app/' target="_blank" rel="noopener noreferrer">Git Repo-Server</a> </button>
+                            <a href={githubServer} target="_blank" rel="noopener noreferrer"><button className="btn btn-sm bg-[#89dafd] border-none text-black hover:bg-green-500 mb-3">Git Repo-Server </button></a>
 
-                            <h1 className='mt-4 font-semibold'> <span className='font-bold'>Technology Used:</span>  Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel, Firebase</h1>
+                            <h1 className='mt-4 font-semibold'> <span className='font-bold'>Technology Used:</span>  {technologies}</h1>
                         </div>
                     </div>
                 </div>
