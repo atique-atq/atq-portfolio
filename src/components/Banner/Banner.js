@@ -25,7 +25,7 @@ const Banner = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse lg:pr-4 justify-between">
                     <div className='lg:ml-2 rounded-full bg[#E5EAEE] shadow-xl shadow-white'>
                         <img src={profile} alt="" className="rounded-full w-96  shadow-lg shadow-white
-                        transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900'"
+                        transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900"
                         />
                     </div>
 

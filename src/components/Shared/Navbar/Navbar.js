@@ -61,7 +61,7 @@ const Navbar = () => {
                         <h1 className='text-xl tracking-[3px] font-sans text-orange-600 text-shadow-lg
                         transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-slate-100 duration-900 hover:rounded-md hover:shadow-lg hover:shadow-white hover:p-2 hover:cursor-pointer
                         '
-                            onClick={() => scroll('banner')}>Portfolio Website</h1>
+                            onClick={() => scroll('banner')}> <Link to='/'>Portfolio Website </Link></h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
