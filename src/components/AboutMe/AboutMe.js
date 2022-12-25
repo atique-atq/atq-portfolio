@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutPic from '../../assets/images/t-removeD.png';
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaStackOverflow, FaFacebook } from "react-icons/fa";
 
 const AboutMe = () => {
     return (
@@ -12,7 +12,32 @@ const AboutMe = () => {
                     <div className='lg:w-7/12 w-11/12
                     transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white' data-aos="fade-right" data-aos-duration="1000">
                         <img src={aboutPic} className="w-full rounded-lg shadow-2xl" alt='' />
-                        <FaGithub></FaGithub>
+
+                        <div className='mt-3 flex justify-evenly border-2 p-1 bg-[#ECF0F3] rounded-md'>
+                            <div>
+                                <a href="https://github.com/atique-atq" target="_blank" rel="noreferrer">
+                                    <FaGithub className='text-3xl'></FaGithub>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://www.linkedin.com/in/md-atiqurrahman/" target="_blank" rel="noreferrer">
+                                    <FaLinkedin className='text-3xl'></FaLinkedin>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://www.facebook.com/atique.atq/" target="_blank" rel="noreferrer">
+                                    <FaFacebook className='text-3xl'></FaFacebook>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://stackoverflow.com/users/5283560/atq" target="_blank" rel="noreferrer">
+                                    <FaStackOverflow className='text-3xl'></FaStackOverflow>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div className='bg-base-100 p-3 lg:w-7/12 w-11/12 shadow-lg rounded-md'>
