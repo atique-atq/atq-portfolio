@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutPic from '../../assets/images/t-removeD.png';
+import { FaGithub } from "react-icons/fa";
 
 const AboutMe = () => {
     return (
@@ -11,6 +12,7 @@ const AboutMe = () => {
                     <div className='lg:w-7/12 w-11/12
                     transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white' data-aos="fade-right" data-aos-duration="1000">
                         <img src={aboutPic} className="w-full rounded-lg shadow-2xl" alt='' />
+                        <FaGithub></FaGithub>
                     </div>
 
                     <div className='bg-base-100 p-3 lg:w-7/12 w-11/12 shadow-lg rounded-md'>
