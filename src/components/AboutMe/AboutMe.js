@@ -93,7 +93,10 @@ const AboutMe = () => {
               {" "}
               <small>
                 {" "}
-                <strong> 1. Assistant Programmer</strong> - DoICT, ICT Division{" "}
+                <strong>
+                  {" "}
+                  1. Assistant Programmer- DoICT, ICT Division
+                </strong>{" "}
                 <span className="italic"> [2019 July – Present]</span>
                 <br />
                 Technologies: Bootstrap, Tailwind CSS, Javascript, React.js,
@@ -103,7 +106,7 @@ const AboutMe = () => {
 
             <p className="pt-2">
               <small>
-                <strong> 2. Software Engineer </strong>- Welldev Bangladesh Ltd{" "}
+                <strong> 2. Software Engineer - Welldev Bangladesh Ltd</strong>{" "}
                 <span className="italic"> [2017 Nov – 2019 Jun]</span>
                 <br />
                 Technologies: Rails, Rspec, PostgreSQL, Hotel, Car, Flight
@@ -114,8 +117,10 @@ const AboutMe = () => {
             <p className="pt-2">
               <small>
                 {" "}
-                <strong> 3. Software Engineering Associate </strong>-Accenture
-                Bangladesh Ltd{" "}
+                <strong>
+                  {" "}
+                  3. Software Engineering Associate - Accenture Bangladesh Ltd
+                </strong>{" "}
                 <span className="italic"> [2017 Nov – 2019 Jun] </span>
                 <br />
                 Technologies: Oracle, JavaScript, HTML, CSS, Java
