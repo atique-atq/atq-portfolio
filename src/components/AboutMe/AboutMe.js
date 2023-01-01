@@ -15,14 +15,14 @@ const AboutMe = () => {
       <div className="hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <div
-            className="lg:w-7/12 w-11/12
-                    transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white"
+            className="lg:w-7/12 w-11/12"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             <img
               src={aboutPic}
-              className="w-full rounded-lg shadow-2xl"
+              className="w-full rounded-lg shadow-2xl
+              transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white"
               alt=""
             />
 
@@ -33,7 +33,11 @@ const AboutMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaGithub className="text-3xl"></FaGithub>
+                  <FaGithub
+                    className="text-3xl shadow-lg rounded-full shadow-white 
+                  transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white
+                  "
+                  ></FaGithub>
                 </a>
               </div>
 
@@ -43,7 +47,11 @@ const AboutMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaLinkedin className="text-3xl"></FaLinkedin>
+                  <FaLinkedin
+                    className="text-3xl shadow-lg rounded-full shadow-white 
+                  transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white
+                  "
+                  ></FaLinkedin>
                 </a>
               </div>
 
@@ -53,7 +61,11 @@ const AboutMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaFacebook className="text-3xl"></FaFacebook>
+                  <FaFacebook
+                    className="text-3xl shadow-lg rounded-full shadow-white 
+                  transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white
+                  "
+                  ></FaFacebook>
                 </a>
               </div>
 
@@ -63,7 +75,11 @@ const AboutMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaStackOverflow className="text-3xl"></FaStackOverflow>
+                  <FaStackOverflow
+                    className="text-3xl shadow-lg rounded-full shadow-white 
+                  transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white
+                  "
+                  ></FaStackOverflow>
                 </a>
               </div>
             </div>
