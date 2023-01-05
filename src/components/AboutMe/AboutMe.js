@@ -89,7 +89,7 @@ const AboutMe = () => {
             <p className="py-3 font-semibold font-mono text-shadow-lg">
               Professional Experiences:
             </p>
-            <div className="outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-lg shadow-white">
+            <div className="bg-white outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-md shadow-slate-400">
               <div className="flex flex-nowrap justify-between font-semibold">
                 <div>1. Assistant Programmer</div>
 
@@ -100,8 +100,8 @@ const AboutMe = () => {
               </div>
               <div className="mt-2">
                 <p>
-                  <span className="font-semibold">Technologies: </span>{" "}
-                  Bootstrap, Tailwind CSS, Javascript, React.js, Node.js
+                  <span className="font-bold">Technologies: </span> Bootstrap,
+                  Tailwind CSS, Javascript, React.js, Node.js
                 </p>
               </div>
 
@@ -123,67 +123,51 @@ const AboutMe = () => {
                 />
                 <div className="modal modal-bottom sm:modal-middle">
                   <div className="modal-box">
-                    <h3 className="font-bold text-lg">
-                      Congratulations random Internet user!
+                    <h3 className=" text-lg">
+                      <span className="font-semibold"> Position: </span>
+                      Assistant Programmer
                     </h3>
-                    <p className="py-4">
-                      You've been selected for a chance to get one year of
-                      subscription to use Wikipedia for free!
-                    </p>
-                    <div className="modal-action">
-                      <label htmlFor="my-modal-6" className="btn">
-                        Yay!
-                      </label>
+                    <h3 className="text-lg">
+                      <span className="font-semibold"> Organization:</span>{" "}
+                      DoICT, ICT Division, Bangladesh
+                    </h3>
+                    <h3 className="text-lg">
+                      <span className="font-semibold"> Duration:</span> June,
+                      2019 - Present
+                    </h3>
+                    <hr className="bg-gray-400 border-2" />
+
+                    <div className="py-4 text-lg">
+                      <span className="text-black font-semibold">
+                        Description:
+                      </span>{" "}
+                      <ul className="list-disc ml-4">
+                        <li>
+                          {" "}
+                          Working in government projects and developing in-house
+                          software for internal use and also for others
+                          government body.
+                        </li>
+                        <li className="mt-1">
+                          Also worked as project manager to collaborate with
+                          vendors for building large applications which are
+                          being used by all the government employees of
+                          Bangladesh.
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="outline outline-1 rounded-lg p-1 mt-2 text-xs shadow-lg shadow-white">
-              <div className="flex flex-nowrap justify-between font-semibold">
-                <div>1. Assistant Programmer</div>
-
-                <div className="text-slate-500">
-                  <span className="text-slate-400 italic">@</span> DoICT, ICT
-                  Division
-                </div>
-              </div>
-              <div className="mt-2">
-                <p>
-                  <span className="font-semibold">Technologies: </span>{" "}
-                  Bootstrap, Tailwind CSS, Javascript, React.js, Node.js
-                </p>
-              </div>
-
-              {/* modal */}
-              {/* The button to open modal */}
-              <div className="flex justify-end">
-                <label
-                  htmlFor="my-modal-6"
-                  className="outline outline-0 p-1 mt-0 rounded content-end bg-[#d2d5d6] cursor-pointer
-                  hover:bg-white"
-                >
-                  Details
-                </label>
-                {/* Put this part before </body> tag */}
-                <input
-                  type="checkbox"
-                  id="my-modal-6"
-                  className="modal-toggle"
-                />
-                <div className="modal modal-bottom sm:modal-middle">
-                  <div className="modal-box">
-                    <h3 className="font-bold text-lg">
-                      Congratulations random Internet user!
-                    </h3>
-                    <p className="py-4">
-                      You've been selected for a chance to get one year of
-                      subscription to use Wikipedia for free!
+                    <p className="text-lg">
+                      <span className="font-bold">Technologies:</span>
+                      Tailwind CSS · React.js · Cascading Style Sheets (CSS) ·
+                      Node.js
                     </p>
                     <div className="modal-action">
-                      <label htmlFor="my-modal-6" className="btn">
-                        Yay!
+                      <label
+                        htmlFor="my-modal-6"
+                        className="text-lg outline outline-0 p-1 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
+                  hover:bg-white"
+                      >
+                        close
                       </label>
                     </div>
                   </div>
