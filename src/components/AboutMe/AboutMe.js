@@ -93,8 +93,8 @@ const AboutMe = () => {
               <div className="flex flex-nowrap justify-between font-semibold">
                 <div>1. Assistant Programmer</div>
 
-                <div className="text-slate-500">
-                  <span className="text-slate-400 italic">@</span> DoICT, ICT
+                <div className="">
+                  <span className="text-slate-600 italic">@</span> DoICT, ICT
                   Division
                 </div>
               </div>
@@ -177,18 +177,19 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <div className="bg-white outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-md shadow-slate-400">
+            <div className="mt-2 bg-white outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-md shadow-slate-400">
               <div className="flex flex-nowrap justify-between font-semibold">
                 <div>2. Software Engineer</div>
 
-                <div className="text-slate-500">
-                  <span className="text-slate-400 italic">@</span> Welldev Bangladesh Ltd.
+                <div className="">
+                  <span className="text-slate-600 italic">@</span> Welldev
+                  Bangladesh Ltd.
                 </div>
               </div>
               <div className="mt-2">
                 <p>
-                  <span className="font-bold">Technologies: </span> Bootstrap,
-                  Tailwind CSS, Javascript, React.js, Node.js
+                  <span className="font-bold">Technologies: </span> Rails,
+                  RSpec, React, PostgreSQL
                 </p>
               </div>
 
@@ -197,7 +198,7 @@ const AboutMe = () => {
               <div className="flex justify-end">
                 <label
                   htmlFor="my-modal-6"
-                  className="outline outline-0 p-1 mt-0 rounded content-end bg-[#d2d5d6] cursor-pointer
+                  className="outline outline-0 p-1 mt-1 rounded content-end bg-[#d2d5d6] cursor-pointer
                   hover:bg-white"
                 >
                   Details
@@ -213,15 +214,15 @@ const AboutMe = () => {
                     <div className="border-2 border-slate-300 p-2 rounded-lg">
                       <h3 className=" text-lg">
                         <span className="font-semibold"> Position: </span>
-                        Assistant Programmer
+                        Software Engineer
                       </h3>
                       <h3 className="text-lg">
                         <span className="font-semibold"> Organization:</span>{" "}
-                        DoICT, ICT Division, Bangladesh
+                        Welldev Bangladesh Ltd
                       </h3>
                       <h3 className="text-lg">
-                        <span className="font-semibold"> Duration:</span> June,
-                        2019 - Present
+                        <span className="font-semibold"> Duration:</span>{" "}
+                        November, 2017 - June, 2019
                       </h3>
                       <hr className="bg-gray-400 border-2" />
 
