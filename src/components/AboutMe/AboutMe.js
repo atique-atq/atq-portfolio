@@ -122,53 +122,142 @@ const AboutMe = () => {
                   className="modal-toggle"
                 />
                 <div className="modal modal-bottom sm:modal-middle">
-                  <div className="modal-box">
-                    <h3 className=" text-lg">
-                      <span className="font-semibold"> Position: </span>
-                      Assistant Programmer
-                    </h3>
-                    <h3 className="text-lg">
-                      <span className="font-semibold"> Organization:</span>{" "}
-                      DoICT, ICT Division, Bangladesh
-                    </h3>
-                    <h3 className="text-lg">
-                      <span className="font-semibold"> Duration:</span> June,
-                      2019 - Present
-                    </h3>
-                    <hr className="bg-gray-400 border-2" />
+                  <div className="modal-box p-3 ">
+                    <div className="border-2 border-slate-300 p-2 rounded-lg">
+                      <h3 className=" text-lg">
+                        <span className="font-semibold"> Position: </span>
+                        Assistant Programmer
+                      </h3>
+                      <h3 className="text-lg">
+                        <span className="font-semibold"> Organization:</span>{" "}
+                        DoICT, ICT Division, Bangladesh
+                      </h3>
+                      <h3 className="text-lg">
+                        <span className="font-semibold"> Duration:</span> June,
+                        2019 - Present
+                      </h3>
+                      <hr className="bg-gray-400 border-2" />
 
-                    <div className="py-4 text-lg">
-                      <span className="text-black font-semibold">
-                        Description:
-                      </span>{" "}
-                      <ul className="list-disc ml-4">
-                        <li>
-                          {" "}
-                          Working in government projects and developing in-house
-                          software for internal use and also for others
-                          government body.
-                        </li>
-                        <li className="mt-1">
-                          Also worked as project manager to collaborate with
-                          vendors for building large applications which are
-                          being used by all the government employees of
-                          Bangladesh.
-                        </li>
-                      </ul>
-                    </div>
-                    <p className="text-lg">
-                      <span className="font-bold">Technologies:</span>
-                      Tailwind CSS · React.js · Cascading Style Sheets (CSS) ·
-                      Node.js
-                    </p>
-                    <div className="modal-action">
-                      <label
-                        htmlFor="my-modal-6"
-                        className="text-lg outline outline-0 p-1 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
+                      <div className="py-4 text-lg bg-white p-2 rounded-lg my-2">
+                        <span className="text-black font-semibold">
+                          Description:
+                        </span>{" "}
+                        <ul className="list-disc ml-4 ">
+                          <li>
+                            {" "}
+                            Working in government projects and developing
+                            in-house software for internal use and also for
+                            others government body.
+                          </li>
+                          <li className="mt-1">
+                            Also worked as project manager to collaborate with
+                            vendors for building large applications which are
+                            being used by all the government employees of
+                            Bangladesh.
+                          </li>
+                        </ul>
+                      </div>
+                      <p className="text-lg bg-white p-2 rounded-lg">
+                        <span className="font-bold">Technologies:</span>
+                        Tailwind CSS · React.js · Cascading Style Sheets (CSS) ·
+                        Node.js
+                      </p>
+                      <div className="modal-action">
+                        <label
+                          htmlFor="my-modal-6"
+                          className="text-lg font-bold outline outline-0 px-4 py-2 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
                   hover:bg-white"
-                      >
-                        close
-                      </label>
+                        >
+                          close
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-md shadow-slate-400">
+              <div className="flex flex-nowrap justify-between font-semibold">
+                <div>2. Software Engineer</div>
+
+                <div className="text-slate-500">
+                  <span className="text-slate-400 italic">@</span> Welldev Bangladesh Ltd.
+                </div>
+              </div>
+              <div className="mt-2">
+                <p>
+                  <span className="font-bold">Technologies: </span> Bootstrap,
+                  Tailwind CSS, Javascript, React.js, Node.js
+                </p>
+              </div>
+
+              {/* modal */}
+              {/* The button to open modal */}
+              <div className="flex justify-end">
+                <label
+                  htmlFor="my-modal-6"
+                  className="outline outline-0 p-1 mt-0 rounded content-end bg-[#d2d5d6] cursor-pointer
+                  hover:bg-white"
+                >
+                  Details
+                </label>
+                {/* Put this part before </body> tag */}
+                <input
+                  type="checkbox"
+                  id="my-modal-6"
+                  className="modal-toggle"
+                />
+                <div className="modal modal-bottom sm:modal-middle">
+                  <div className="modal-box p-3 ">
+                    <div className="border-2 border-slate-300 p-2 rounded-lg">
+                      <h3 className=" text-lg">
+                        <span className="font-semibold"> Position: </span>
+                        Assistant Programmer
+                      </h3>
+                      <h3 className="text-lg">
+                        <span className="font-semibold"> Organization:</span>{" "}
+                        DoICT, ICT Division, Bangladesh
+                      </h3>
+                      <h3 className="text-lg">
+                        <span className="font-semibold"> Duration:</span> June,
+                        2019 - Present
+                      </h3>
+                      <hr className="bg-gray-400 border-2" />
+
+                      <div className="py-4 text-lg bg-white p-2 rounded-lg my-2">
+                        <span className="text-black font-semibold">
+                          Description:
+                        </span>{" "}
+                        <ul className="list-disc ml-4 ">
+                          <li>
+                            {" "}
+                            Working in government projects and developing
+                            in-house software for internal use and also for
+                            others government body.
+                          </li>
+                          <li className="mt-1">
+                            Also worked as project manager to collaborate with
+                            vendors for building large applications which are
+                            being used by all the government employees of
+                            Bangladesh.
+                          </li>
+                        </ul>
+                      </div>
+                      <p className="text-lg bg-white p-2 rounded-lg">
+                        <span className="font-bold">Technologies:</span>
+                        Tailwind CSS · React.js · Cascading Style Sheets (CSS) ·
+                        Node.js
+                      </p>
+                      <div className="modal-action">
+                        <label
+                          htmlFor="my-modal-6"
+                          className="text-lg font-bold outline outline-0 px-4 py-2 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
+                  hover:bg-white"
+                        >
+                          close
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
