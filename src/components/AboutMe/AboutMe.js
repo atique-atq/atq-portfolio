@@ -197,7 +197,7 @@ const AboutMe = () => {
               {/* The button to open modal */}
               <div className="flex justify-end">
                 <label
-                  htmlFor="my-modal-6"
+                  htmlFor="modal-welldev"
                   className="outline outline-0 p-1 mt-1 rounded content-end bg-[#d2d5d6] cursor-pointer
                   hover:bg-white"
                 >
@@ -206,27 +206,42 @@ const AboutMe = () => {
                 {/* Put this part before </body> tag */}
                 <input
                   type="checkbox"
-                  id="my-modal-6"
+                  id="modal-welldev"
                   className="modal-toggle"
                 />
                 <div className="modal modal-bottom sm:modal-middle">
-                  <div className="modal-box p-3 ">
+                  <div className="modal-box p-2 bg-slate-100">
                     <div className="border-2 border-slate-300 p-2 rounded-lg">
-                      <h3 className=" text-lg">
-                        <span className="font-semibold"> Position: </span>
-                        Software Engineer
-                      </h3>
-                      <h3 className="text-lg">
-                        <span className="font-semibold"> Organization:</span>{" "}
-                        Welldev Bangladesh Ltd
-                      </h3>
-                      <h3 className="text-lg">
-                        <span className="font-semibold"> Duration:</span>{" "}
-                        November, 2017 - June, 2019
-                      </h3>
+                      <div className="flex flex-col justify-center items-center">
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Position: </span>
+                          Software Engineer
+                        </h3>
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Organization:</span>{" "}
+                          Welldev Bangladesh Ltd
+                        </h3>
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Duration:</span>{" "}
+                          November, 2017 - June, 2019
+                        </h3>
+                      </div>
                       <hr className="bg-gray-400 border-2" />
 
                       <div className="py-4 text-lg bg-white p-2 rounded-lg my-2">
+                        <span className="text-black font-semibold">
+                          Team Description:
+                        </span>{" "}
+                        <div className="text-sm">
+                          Worked in API team that integrates APIs of flights,
+                          hotels and car rental systems and facilitates full
+                          booking flow from search to post booking services.
+                          In-house Application team and worldwide various
+                          agencies were our API consumer.
+                        </div>
+                      </div>
+
+                      <div className="py-4 text-lg bg-white p-2 rounded-lg my-2 text-sm">
                         <span className="text-black font-semibold">
                           Description:
                         </span>{" "}
@@ -247,12 +262,11 @@ const AboutMe = () => {
                       </div>
                       <p className="text-lg bg-white p-2 rounded-lg">
                         <span className="font-bold">Technologies:</span>
-                        Tailwind CSS · React.js · Cascading Style Sheets (CSS) ·
-                        Node.js
+                        Rails, RSpec, PostgreSQL
                       </p>
                       <div className="modal-action">
                         <label
-                          htmlFor="my-modal-6"
+                          htmlFor="modal-welldev"
                           className="text-lg font-bold outline outline-0 px-4 py-2 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
                   hover:bg-white"
                         >
