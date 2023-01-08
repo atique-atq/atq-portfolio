@@ -278,6 +278,108 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
+
+            <div className="mt-2 bg-white outline outline-slate-300 outline-1 rounded-lg p-2 text-xs shadow-md shadow-slate-400">
+              <div className="flex flex-nowrap justify-between font-semibold">
+                <div>3. Application Development Associate</div>
+
+                <div className="">
+                  <span className="text-slate-600 italic">@</span> Accenture
+                  Bangladesh Ltd.
+                </div>
+              </div>
+              <div className="mt-2">
+                <p>
+                  <span className="font-bold">Technologies: </span> Java,
+                  Oracle, Javascript
+                </p>
+              </div>
+
+              {/* modal */}
+              {/* The button to open modal */}
+              <div className="flex justify-end">
+                <label
+                  htmlFor="modal-accenture"
+                  className="outline outline-0 p-1 mt-1 rounded content-end bg-[#d2d5d6] cursor-pointer
+                  hover:bg-white"
+                >
+                  Details
+                </label>
+                {/* Put this part before </body> tag */}
+                <input
+                  type="checkbox"
+                  id="modal-accenture"
+                  className="modal-toggle"
+                />
+                <div className="modal modal-bottom sm:modal-middle">
+                  <div className="modal-box p-2 bg-slate-100">
+                    <div className="border-2 border-slate-300 p-2 rounded-lg">
+                      <div className="flex flex-col justify-center items-center">
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Position: </span>
+                          Software Engineer
+                        </h3>
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Organization:</span>{" "}
+                          Welldev Bangladesh Ltd
+                        </h3>
+                        <h3 className="text-sm">
+                          <span className="font-semibold"> Duration:</span>{" "}
+                          November, 2017 - June, 2019
+                        </h3>
+                      </div>
+                      <hr className="bg-gray-400 border-2" />
+
+                      <div className="py-4 text-lg bg-white p-2 rounded-lg my-2">
+                        <span className="text-black font-semibold">
+                          Team Description:
+                        </span>{" "}
+                        <div className="text-sm">
+                          Worked in API team that integrates APIs of flights,
+                          hotels and car rental systems and facilitates full
+                          booking flow from search to post booking services.
+                          In-house Application team and worldwide various
+                          agencies were our API consumer.
+                        </div>
+                      </div>
+
+                      <div className="py-4 text-lg bg-white p-2 rounded-lg my-2 text-sm">
+                        <span className="text-black font-semibold">
+                          Description:
+                        </span>{" "}
+                        <ul className="list-disc ml-4 ">
+                          <li>
+                            {" "}
+                            Working in government projects and developing
+                            in-house software for internal use and also for
+                            others government body.
+                          </li>
+                          <li className="mt-1">
+                            Also worked as project manager to collaborate with
+                            vendors for building large applications which are
+                            being used by all the government employees of
+                            Bangladesh.
+                          </li>
+                        </ul>
+                      </div>
+                      <p className="text-lg bg-white p-2 rounded-lg">
+                        <span className="font-bold">Technologies:</span>
+                        Rails, RSpec, PostgreSQL
+                      </p>
+                      <div className="modal-action">
+                        <label
+                          htmlFor="modal-accenture"
+                          className="text-lg font-bold outline outline-0 px-4 py-2 mt-0 rounded content-end bg-[#6ec5e2] cursor-pointer
+                  hover:bg-white"
+                        >
+                          close
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="bg-[#D0DAE2] rounded-lg p-1 shadow-lg lg:w-7/12 w-11/12
