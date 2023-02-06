@@ -10,7 +10,7 @@ const Projects = () => {
             _id: 'phsw-20221',
             name: 'Share Wear Bd',
             title: 'Website for buying and selling second-hand dresses',
-            shortDescription: 'Implemented admin, seller and buyer authorization. Admin can verify seller, delete any post, any buyer or seller. Also implemented uploading a product, book and complete the purchase.',
+            shortDescription: 'Implemented admin, seller and buyer authorization. Admin can verify seller, delete any post, any buyer or seller. Also implemented uploading a product, book and purchase completion.',
             technologies: 'Tailwind CSS, daisyUI, React.js, Node.js, MongoDB, Vercel',
             liveUrl: 'https://sharewearbd.web.app',
             image: shareWear
@@ -36,17 +36,19 @@ const Projects = () => {
     ]
 
     return (
-        <div className='my-24 mx-[8%] mt-28' id='projects'>
-            <h1 className='font-serif text-5xl font-bold mb-5'>Projects</h1>
-            <div className='grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8'>
-                {
-                    projects?.map((project) => <ProjectCard
-                        key={project._id}
-                        project={project}
-                    ></ProjectCard>)
-                }
-            </div>
-        </div >
+        <div>
+            <div className='my-24 pt-20 px-[8%]' id='projects'>
+                 <h1 className='font-serif text-4xl font-bold mb-5'>Skills</h1>
+                <div className='grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-2'>
+                    {
+                        projects?.map((project) => <ProjectCard
+                            key={project._id}
+                            project={project}
+                        ></ProjectCard>)
+                    }
+                </div>
+            </div >
+        </div>
     );
 };
 

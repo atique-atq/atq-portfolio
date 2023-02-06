@@ -4,8 +4,8 @@ import './Skills.css'
 const Skills = () => {
     return (
         <div className='my-24 pt-20 px-[8%]' id="skills">
-            <h1 className='font-serif text-5xl font-bold mb-5'>Skills</h1>
-            <div className='flex flex-col lg:flex-row justify-center items-center bg-[#68b3afdc]  shadow-lg shadow-white'>
+            <h1 className='font-serif text-4xl font-bold mb-5'>Skills</h1>
+            <div className='flex flex-col lg:flex-row justify-center items-center bg-[#C2E8FF]  shadow-lg shadow-white'>
                 <div className='py-5 px-5 w-11/12 lg:w-7/12 m-2 
                 transition ease-in-out delay- hover:-translate-x-1 hover:scale-115'>
                     <div className='bg-white p-2 rounded-md shadow-md shadow-slate-400 hover:shadow-white

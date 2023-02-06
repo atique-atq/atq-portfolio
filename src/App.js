@@ -11,7 +11,7 @@ import ProjectDetails from './components/Projects/ProjectDetails';
 import 'react-photo-view/dist/react-photo-view.css';
 import DisplayError from './components/Shared/DisplayError/DisplayError';
 import Blog from './components/Blog/Blog';
-
+import { ScrollRestoration } from "react-router-dom";
 
 function App() {
 
@@ -45,8 +45,17 @@ function App() {
 
   return (
     <div>
-      <RouterProvider router={router} />
+
+      <RouterProvider router={router}> 
+            <ScrollRestoration getKey={(location, matches) => {
+            // default behavior
+            return location.key;
+          }}>
+
+          </ScrollRestoration>
+      </RouterProvider>
       <Toaster></Toaster>
+
     </div>
   );
 }

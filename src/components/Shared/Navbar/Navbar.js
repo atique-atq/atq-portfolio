@@ -16,17 +16,17 @@ const Navbar = () => {
 
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('projects')} >
-            <Link>Projects</Link>
+            <Link to="/">Projects</Link>
         </li>
 
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('skills')} >
-            <Link> Skills</Link >
+            <Link to="/"> Skills</Link >
         </li>
 
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('about-me')} >
-            <Link>About me</Link>
+            <Link to="/">About me</Link>
         </li>
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'>
             <Link to='/blog'>Blog</Link>

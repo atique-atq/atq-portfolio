@@ -7,20 +7,23 @@ const ProjectCard = ({ project }) => {
 
     return (
         <div >
-            <div className="card shadow-xl shadow-white  place-content-center rounded-none w-full bg-[#EDF1F3] p-4 h-96 w-full 
-            transition ease-in-out delay-00 hover:-translate-y-1 hover:scale-80 hover:bg-white duration-900">
-                <img className='w-9/12 mx-auto mb-2' src={image} alt="" />
-
+            <div className="card shadow-lg shadow-blue-300  place-content-center rounded-none bg-[#C2E8FF] rounded-tr-3xl p-4 h-96 w-11/12 
+            transition ease-in-out delay-00 hover:-translate-y-2 hover:scale-105 hover:bg-white duration-900">
+            <Link to={`project/${_id}`}>
+                <img className='md:w-9/12 w-8/12 mx-auto mb-2' src={image} alt="" />
                 <div>
-                    <Link to={`project/${_id}`}>
                         <div>
-                            <h1 className='font-sans text-info font-semibold text-xl pt-3'>{name}</h1>
-                            <p className='text-sm font-semibold text-gray-600 pt-5 mt-0 pt-0'>{title}</p>
-                            <p className='text-sm  text-gray-500 py-5'> <span>{shortDescription}</span></p>
-                            <p className='border-0 w-full text-info text-right text-sm italic font-bold text-shadow-sm'>Show Details <FaArrowAltCircleRight className='inline-block'></FaArrowAltCircleRight></p>
+                            <div className='h-48'>
+                                <h1 className='font-sans text-[#0B57D0] font-semibold text-lg pt-3'>{name}</h1>
+                                <p className='text-sm font-semibold text-gray-600 pt-5 mt-0 pt-0'>{title}</p>
+                                <p className='text-xs  text-gray-600 py-5'> <span>{shortDescription}</span></p>
+                            </div>
+                            <div className='flex justify-end'>
+                                <p className='bg-[#FC6F5C] border-0 w-6/12 text-white text-right text-sm font-bold p-2 rounded-lg'>Show Details <FaArrowAltCircleRight className='inline-block'></FaArrowAltCircleRight></p>
+                            </div>
                         </div>
-                    </Link>
                 </div>
+             </Link>
             </div>
         </div>
     );
