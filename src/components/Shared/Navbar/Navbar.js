@@ -32,13 +32,13 @@ const Navbar = () => {
             <Link to='/blog'>Blog</Link>
         </li>
         <li
-            onClick={() => scroll('contact')} className='mx-0 lg:mr-12 font-semibold rounded-lg text-[#EB3E0D] shadow-lg shadow-white  shake
+            onClick={() => scroll('contact')} className='mx-0 lg:mr-12 font-bold rounded-lg text-[#EB3E0D] shadow-lg shadow-white  shake
             transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'><Link >Contact</Link></li>
     </React.Fragment >
 
     return (
         <div>
-            <div className="navbar bg-base-100 text-lg font-semibold text-gray-500 fixed top-0 z-50 ">
+            <div className="navbar bg-base-100 text-lg font-bold text-[#2f373e] fixed top-0 z-50 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
