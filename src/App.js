@@ -12,6 +12,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 import DisplayError from './components/Shared/DisplayError/DisplayError';
 import Blog from './components/Blog/Blog';
 import { ScrollRestoration } from "react-router-dom";
+import ProjectDetailsLayout from './layouts/ProjectDetailsLayout';
 
 function App() {
 
@@ -30,17 +31,28 @@ function App() {
           path: '/',
           element: <Home></Home>
         },
-        {
-          path: '/project/:id',
-          loader: ({ params }) => allProjectsData(params.id),
-          element: <ProjectDetails></ProjectDetails>
-        },
+        // {
+        //   path: '/project/:id',
+        //   loader: ({ params }) => allProjectsData(params.id),
+        //   element: <ProjectDetails></ProjectDetails>
+        // },
         {
           path: '/blog',
           element: <Blog></Blog>
         },
       ]
     },
+    {
+        path: '/project',
+        element: <ProjectDetailsLayout></ProjectDetailsLayout>,
+        children: [
+          {
+            path: '/project/:id',
+            loader: ({ params }) => allProjectsData(params.id),
+            element: <ProjectDetails></ProjectDetails>
+          }
+        ]
+    }    
   ]);
 
   return (

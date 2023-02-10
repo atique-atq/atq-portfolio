@@ -16,7 +16,7 @@ const ProjectDetails = () => {
     }, [pathname]);
 
     return (
-        <div className='mt-2 my-6 pt-20 px-[12%]' >
+        <div className='mt-0 my-6 pt-20 px-[12%]' >
             <br />
             <div className='bg-white py-8 rounded shadow-xl shadow-gray-500'>
                 <Carousel cols={3} rows={1} gap={6} loop autoplay={3000}>

@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
         <div >
             <div className="card shadow-lg shadow-blue-300  place-content-center rounded-none bg-[#C2E8FF] rounded-tr-3xl p-4 h-96 w-11/12 
             transition ease-in-out delay-00 hover:-translate-y-2 hover:scale-105 hover:bg-white duration-900">
-            <Link to={`project/${_id}`}>
+            <Link target="_blank" to={`project/${_id}`}>
                 <img className='md:w-9/12 w-8/12 mx-auto mb-2' src={image} alt="" />
                 <div>
                         <div>
