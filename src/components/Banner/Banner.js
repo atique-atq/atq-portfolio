@@ -23,7 +23,6 @@ const Banner = () => {
       });
     });
   };
-  // text-[#28317c]
 
   return (
     <div>
@@ -75,13 +74,12 @@ const Banner = () => {
             </button>
           </div>
 
-            {/* Put this part before </body> tag */}
             <input type="checkbox" id="banner-desc-modal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle mt-8">
-              <div className="modal-box w-full bg-white p-8">
+              <div className="modal-box w-full bg-white p-8 mt-8">
                 <p className="text-sm">I am working in MERN stack development specially in React and Javascript. Also I have professional experience in API development, writing test code and PR review. Spanning over four years career development, I am involved in:</p>
 
-                <ul className="list-[square] text-sm mt-6">
+                <ul className="list-[square] marker:text-[#EB3E0D] marker:text-xl ml-3 text-sm mt-6">
                   <li>
                     Working in frontend development using <span className="font-semibold">React, Javascript</span>  and other CSS frameworks for responsive designs and single page application <span className="font-semibold">(SPA)</span>.
                   </li>

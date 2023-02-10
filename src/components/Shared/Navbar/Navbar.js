@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import circleImage from '../../../assets/images/bg-dark.png'
 import './Navbar.css';
@@ -14,10 +16,12 @@ const Navbar = () => {
             onClick={() => scroll('banner')} >
             <Link to="/">Home</Link></li>
 
-        <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-            onClick={() => scroll('projects')} >
-            <Link to="/">Projects</Link>
-        </li>
+        {
+            <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
+                onClick={() => scroll('projects')} >
+                <Link to="/">Projects</Link>
+            </li>
+        }
 
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('skills')} >

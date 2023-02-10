@@ -35,7 +35,7 @@ const ProjectDetails = () => {
                 </Carousel>
                 <div className='mt-2 px-4'>
                     <h1 className='font-sans text-info font-semibold text-xl py-3 text-center text-shadow-sm'>{name}:<span className='pl-4 text-lg font-semibold text-gray-600 pt-5 mt-0 pt-0'>{title}</span> </h1>
-                    <div class="grid md:grid-cols-3  grid-cols-1 gap-4">
+                    <div className="grid md:grid-cols-3  grid-cols-1 gap-4">
                         <div className='ml-4 col-span-2 border-gray-200 border-r-4 pr-4'>
                             <h1 className='font-semibold font-sans'>Description:</h1>
                             <ul className="list-disc ml-6 text-sm">
