@@ -15,17 +15,15 @@ const Navbar = () => {
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('banner')} >
             <Link to="/">Home</Link></li>
-
-        {
-           <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
-                onClick={() => scroll('projects')} >
-                <Link to="/">Projects</Link>
-            </li>
-        }
-
+        
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
             onClick={() => scroll('skills')} >
             <Link to="/"> Skills</Link >
+        </li>
+
+        <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'
+            onClick={() => scroll('projects')} >
+            <Link to="/">Projects</Link>
         </li>
 
         <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'

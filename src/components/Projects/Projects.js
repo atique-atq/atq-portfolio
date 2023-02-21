@@ -38,7 +38,7 @@ const Projects = () => {
     return (
         <div>
             <div className='my-24 pt-20 px-[8%]' id='projects'>
-                 <h1 className='font-serif text-4xl font-bold mb-5'>Skills</h1>
+                 <h1 className='font-serif text-4xl font-bold mb-5'>Projects</h1>
                 <div className='grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-2'>
                     {
                         projects?.map((project) => <ProjectCard
