@@ -30,12 +30,12 @@ const Navbar = () => {
             onClick={() => scroll('about-me')} >
             <Link to="/">About me</Link>
         </li>
-        <li className='transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'>
+        <li className='transition ease-in-out delay- hover:-translate-y-1 hoverx:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'>
             <Link to='/blog'>Blog</Link>
         </li>
         <li
-            onClick={() => scroll('contact')} className='mx-0 lg:mr-12 font-bold rounded-lg text-[#EB3E0D] shadow-lg shadow-white  shake
-            transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-xl hover:shadow-white'><Link >Contact</Link></li>
+        onClick={() => scroll('contact')} className='mx-0 bg-gradient-to-r from-[#ECF0F3] to-white lg:mr-12 font-bold rounded-lg text-[#EB3E0D] shadow-lg shadow-[#c6c7c9]  shake
+            transition ease-in-out delay- hover:-translate-y-1 hover:scale-100 hover:bg-white duration-900 hover:rounded-md hover:shadow-white'><Link >Contact</Link></li>
     </React.Fragment >
 
     return (

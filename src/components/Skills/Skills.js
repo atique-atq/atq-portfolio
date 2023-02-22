@@ -39,16 +39,9 @@ const Skills = () => {
 
                 <div className='w-10/12 lg:w-5/12 bg-white m-2 rounded mx-8 shadow-lg shadow-slate-400 hover:shadow-white
                 transition ease-in-out delay- hover:-translate-x-3 hover:scale-110 hover:bg-white duration-900'>
-                    {/* <span className='flex flex-row items-center justify-center p-3'> <span>JavaScript:</span> <progress className="ml-4 progress progress-success w-full inline-block h-4  bg-base-100" value="90" max="100"></progress></span> */}
-                    {/* 
-                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-4'>React.js:</span> <progress className="ml-4 progress progress-success w-full inline-block h-4 bg-base-100" value="90" max="100"></progress></span>
-
-                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-1'>MongoDB:</span> <progress className="ml-4 progress progress-info w-full inline-block h-4 bg-base-100" value="75" max="100"></progress></span>
-
-                    <span className='flex flex-row items-center justify-center p-3 '> <span className='pl-5'>Node.js:</span> <progress className="ml-4 progress progress-warning w-full inline-block h-4 bg-base-100" value="70" max="100"></progress></span> */}
                     <div className="p-10 flex flex-col space-y-3">
                         <div data-aos="fade-left" data-aos-duration="500">
-                            <h1>Tailwind</h1>
+                            <h1>CSS Framework</h1>
                             <div className="relative w-full bg-gray-200 rounded">
                                 <div style={{ width: "95%" }} className="absolute top-0 h-4 rounded shim-solidGreen"></div>
                             </div>
@@ -63,7 +56,7 @@ const Skills = () => {
                         <div data-aos="fade-left" data-aos-duration="1200">
                             <h1>React.js</h1>
                             <div className="relative w-full bg-gray-200 rounded">
-                                <div style={{ width: "85%" }} className="absolute top-0 h-4 rounded shim-green"></div>
+                                <div style={{ width: "87%" }} className="absolute top-0 h-4 rounded shim-green"></div>
                             </div>
                         </div>
 
