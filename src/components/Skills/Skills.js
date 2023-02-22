@@ -1,39 +1,92 @@
 import React from 'react';
 import './Skills.css'
+import react from '../../assets/images/skill/react.png';
+import js from '../../assets/images/skill/js.png';
+import node from '../../assets/images/skill/node.png';
+import mongoDB from '../../assets/images/skill/mongo.png';
+import html from '../../assets/images/skill/html.webp';
+import css from '../../assets/images/skill/css.png';
+import tailwind from '../../assets/images/skill/tailwind.png';
+import bootstrap from '../../assets/images/skill/bootstrap.png';
 
 const Skills = () => {
     return (
-        <div className='my-24 pt-20 px-[8%]' id="skills">
-            <h1 className='font-serif text-4xl font-bold mb-5'>Skills</h1>
-            <div className='flex flex-col lg:flex-row justify-center items-center bg-[#C2E8FF]  shadow-lg shadow-white'>
-                <div className='py-5 px-5 w-11/12 lg:w-7/12 m-2 
-                transition ease-in-out delay- hover:-translate-x-1 hover:scale-115'>
-                    <div className='bg-white p-2 rounded-md shadow-md shadow-slate-400 hover:shadow-white
-                    transition ease-in-out delay- hover:-translate-x-1 hover:scale-115 hover:bg-white duration-900'
-                        data-aos="fade-down" data-aos-duration="500">
-                        <p className='font-extrabold font-mono text-lg text-[rgb(30,164,226)]'>Expertise</p>
-                        <h1 className='text-md font-sans mt-1 font-medium'> Html, CSS, Bootstrap, Tailwind CSS, JavaScript, React.js, MongoDB </h1>
-                    </div>
+        <div className='my-24 pt-20 px-[3%]' id="skills">
+            <h1 className='font-serif text-4xl font-bold mb-5 ml-[3%]'>Skills</h1>
+            <div className='flex flex-col lg:flex-row justify-center items-center '>
+                <div className='py-5 px-5 w-11/12 lg:w-7/12 m-2'>
+                    <div className='flex flex-col'>
+                        <div className='flex flex-wrap'>
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono
+                                animate-bounce'>
+                                    <img className='w-4/6 h-12 rounded-lg' src={react} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>React</p>
+                                </div>
+                            </div>
 
-                    <div className='bg-white p-2 rounded-md mt-3 shadow-md shadow-slate-400 hover:shadow-white
-                    transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900'
-                        data-aos="fade-down" data-aos-duration="1000">
-                        <p className='font-extrabold font-mono text-lg text-[rgb(30,164,226)]'>Comfortable</p>
-                        <h1 className='text-md font-sans mt-1 font-medium'> Node.js, Rails, RSpec, PostgreSQL, Oracle, Java, Rest API</h1>
-                    </div>
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg' src={js} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Javascript</p>
+                                </div>
+                            </div>
 
-                    <div className='bg-white p-2 rounded-md mt-3 shadow-md shadow-slate-400 hover:shadow-white
-                    transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900'
-                        data-aos="fade-down" data-aos-duration="1300">
-                        <p className='font-extrabold font-mono text-lg text-[rgb(30,164,226)]'>Familiar</p>
-                        <h1 className='text-md font-sans mt-1 font-medium'> Material-UI, Typescript, GraphQL, Redux, Jest</h1>
-                    </div>
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={node} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Node</p>
+                                </div>
+                            </div>
 
-                    <div className='bg-white p-2 rounded-md mt-3 shadow-md shadow-slate-400 hover:shadow-white
-                    transition ease-in-out delay- hover:-translate-x-1 hover:scale-105 hover:bg-white duration-900'
-                        data-aos="fade-down" data-aos-duration="1500">
-                        <p className='font-extrabold font-mono text-lg text-[rgb(30,164,226)]'>Tools</p>
-                        <h1 className='text-md font-sans mt-1 font-medium'>Firebase, Git, Netlify, Vercel, Chrome Dev Tools</h1>
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={mongoDB} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>MongoDB</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className='flex flex-wrap mt-6'>
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white hover:to-[#ff014f]
+                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg' src={html} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>HTML</p>
+                                </div>
+                            </div>
+
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg' src={css} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>CSS</p>
+                                </div>
+                            </div>
+
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={tailwind} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Tailwind</p>
+                                </div>
+                            </div>
+
+                            <div className='w-20 md:w-24 mr-6'>
+                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={bootstrap} alt="" />
+                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Bootstrap</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        
                     </div>
                 </div>
 
