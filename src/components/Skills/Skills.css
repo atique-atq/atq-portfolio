@@ -107,10 +107,62 @@
     animation: shimmer 3s ease-out infinite;
     content: "";
   }
-  
+
   @keyframes shimmer {
     100% {
       transform: translateX(0%);
       opacity: 0;
     }
   }
+
+  .skill-box {
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .skill-box1 {
+    transform: translatey(1px);
+    animation: float1 3s ease-in-out infinite;
+  }
+
+  .skill-box2 {
+    transform: translatey(10px);
+    animation: float2 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-12px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+}
+
+
+@keyframes float1 {
+  0% {
+    transform: translatey(2px);
+  }
+  50% {
+    transform: translatey(-6px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(6px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
