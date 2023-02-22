@@ -1,5 +1,6 @@
 import React from 'react';
-import './Skills.css'
+import './Skills.css';
+import ReactFloaterJs from 'react-floaterjs'
 import react from '../../assets/images/skill/react.png';
 import js from '../../assets/images/skill/js.png';
 import node from '../../assets/images/skill/node.png';
@@ -16,75 +17,90 @@ const Skills = () => {
             <div className='flex flex-col lg:flex-row justify-center items-center '>
                 <div className='py-5 px-5 w-11/12 lg:w-7/12 m-2'>
                     <div className='flex flex-col'>
-                        <div className='flex flex-wrap'>
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
-                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono
-                                animate-bounce'>
-                                    <img className='w-4/6 h-12 rounded-lg' src={react} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>React</p>
-                                </div>
-                            </div>
+                        <div className='flex flex-wrap md:items-center md:justify-center'>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                    p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
-                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg' src={js} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Javascript</p>
+                                        <img className='w-4/6 h-12 rounded-lg' src={react} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>React</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
-                                p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={node} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Node</p>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                    p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg' src={js} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>Javascript</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
-                                p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={mongoDB} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>MongoDB</p>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                    p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg pl-1' src={node} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>Node</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6 mt-1 md:mt-0'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#EDF5F6] hover:from-[#ff014f] to-[#effbfd] hover:to-[#ff014f] 
+                                    p-1 rounded-xl hover:text-white transition duration-700  ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg pl-1' src={mongoDB} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>MongoDB</p>
+                                    </div>
+                                </div>
+                            </ReactFloaterJs>
                         </div>
 
-                        <div className='flex flex-wrap mt-6'>
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white hover:to-[#ff014f]
-                                p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg' src={html} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>HTML</p>
+                        <div className='flex flex-wrap mt-6 md:items-center md:justify-center'>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white hover:to-[#ff014f]
+                                    p-1 rounded-xl hover:text-white transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg' src={html} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>HTML</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
-                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg' src={css} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>CSS</p>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                    p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg' src={css} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>CSS</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
-                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={tailwind} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Tailwind</p>
+                            <ReactFloaterJs>
+                                <div className='w-20 md:w-24 mr-6'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                    p-1 rounded-xl hover:text-white transition delay-300 ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg pl-1' src={tailwind} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>Tailwind</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </ReactFloaterJs>
 
-                            <div className='w-20 md:w-24 mr-6'>
-                                <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
-                                p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
-                                    <img className='w-4/6 h-12 rounded-lg pl-1' src={bootstrap} alt="" />
-                                    <p className='mt-2 text-xs font-semibold hover:text-white'>Bootstrap</p>
+                            <ReactFloaterJs className="transition delay-150">
+                                <div className='w-20 md:w-24 mr-6 mt-1 md:mt-0'>
+                                    <div className='flex flex-col justify-center items-center shadow-lg shadow-[#c6c7c9] bg-gradient-to-r from-[#E7ECF0] hover:from-[#ff014f] to-white duration-700 hover:to-[#ff014f]
+                                    p-1 rounded-xl hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-115 duration-900 text-gray-600 font-mono'>
+                                        <img className='w-4/6 h-12 rounded-lg pl-1' src={bootstrap} alt="" />
+                                        <p className='mt-2 text-xs font-semibold hover:text-white'>Bootstrap</p>
+                                    </div>
                                 </div>
-                            </div>
-
+                            </ReactFloaterJs>    
+                  
                         </div>
                         
                     </div>
